@@ -1,8 +1,7 @@
 aid: data-commons
 name: Data Commons
 description: >-
-  Data Commons brings together the worlds public data, making it simple to
-  explore 
+  Data Commons brings together the worlds public data, making it simple to explore.
 type: Index
 position: Consumer
 access: 3rd-Party
@@ -18,8 +17,7 @@ apis:
   - aid: data-commons:data-commons
     name: Data Commons
     description: >-
-      Data Commons brings together the worlds public data, making it simple to
-      explore 
+      Data Commons brings together the worlds public data, making it simple to explore.
     humanURL: https://datacommons.org/
     tags:
       - API
