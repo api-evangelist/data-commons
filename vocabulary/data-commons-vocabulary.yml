@@ -1,0 +1,53 @@
+name: Data Commons Vocabulary
+description: >-
+  Vocabulary of core Data Commons knowledge graph concepts used to describe
+  statistical variables, places, observations, and provenance.
+terms:
+  - term: DCID
+    definition: >-
+      Data Commons ID, the canonical identifier assigned to every node in the
+      knowledge graph including places, variables, and provenances.
+  - term: Statistical Variable
+    definition: >-
+      A measurable property such as Count_Person or Median_Income, modeled as
+      StatVar nodes that describe what is being observed.
+  - term: Statistical Variable Group
+    definition: >-
+      A hierarchical grouping of related statistical variables used for
+      browsing and discovery in the Data Commons UI.
+  - term: Place
+    definition: >-
+      A geographic entity such as a country, state, county, city, or census
+      tract identified by a DCID.
+  - term: Observation
+    definition: >-
+      A single measurement of a statistical variable for a place at a time
+      with a value and source provenance.
+  - term: Property
+    definition: >-
+      A typed relationship between two nodes in the knowledge graph,
+      modeling attributes and connections.
+  - term: Knowledge Graph
+    definition: >-
+      The unified graph of nodes and properties that combines public data
+      from many providers into a single addressable structure.
+  - term: Provenance
+    definition: >-
+      The source, version, and methodology metadata attached to every
+      observation in Data Commons.
+  - term: Entity Resolution
+    definition: >-
+      The process of mapping external identifiers, names, or codes to
+      Data Commons DCIDs through the resolve API.
+  - term: Custom Data Commons
+    definition: >-
+      A private deployment of Data Commons hosted by an organization to
+      blend its own data with the public knowledge graph.
+  - term: Natural Language Interface
+    definition: >-
+      The NL API and explore tooling that lets users query Data Commons in
+      plain English.
+  - term: MCP Server
+    definition: >-
+      A Model Context Protocol server that exposes Data Commons queries to
+      AI agents.

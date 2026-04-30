@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dc": "https://datacommons.org/browser/",
+    "DCID": "https://schema.org/identifier",
+    "StatisticalVariable": {
+      "@id": "dc:StatisticalVariable",
+      "@context": {
+        "name": "https://schema.org/name",
+        "measuredProperty": "https://schema.org/propertyID",
+        "populationType": "https://schema.org/about",
+        "statType": "https://schema.org/additionalType",
+        "constraintProperties": "https://schema.org/additionalProperty"
+      }
+    },
+    "Place": {
+      "@id": "https://schema.org/Place",
+      "@context": {
+        "dcid": "https://schema.org/identifier",
+        "name": "https://schema.org/name",
+        "containedInPlace": "https://schema.org/containedInPlace",
+        "typeOf": "https://schema.org/additionalType"
+      }
+    },
+    "Observation": {
+      "@id": "https://schema.org/Observation",
+      "@context": {
+        "variable": "https://schema.org/variableMeasured",
+        "place": "https://schema.org/observationAbout",
+        "value": "https://schema.org/value",
+        "date": "https://schema.org/observationDate",
+        "unit": "https://schema.org/unitText",
+        "provenance": "https://schema.org/sourceOrganization"
+      }
+    },
+    "Provenance": {
+      "@id": "dc:Provenance",
+      "@context": {
+        "source": "https://schema.org/sourceOrganization",
+        "url": "https://schema.org/url",
+        "importDate": "https://schema.org/dateCreated",
+        "version": "https://schema.org/version"
+      }
+    }
+  }
+}
