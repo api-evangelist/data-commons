@@ -41,6 +41,8 @@ apis:
         url: https://apikeys.datacommons.org
       - type: Reference
         url: https://docs.datacommons.org/api/
+      - type: OpenAPI
+        url: openapi/data-commons-openapi.yml
   - aid: data-commons:python
     name: Data Commons Python Client
     description: >-
