@@ -5,8 +5,7 @@ description: >-
   aggregates and harmonizes the world's public data into a single graph,
   making global statistical data simple to explore, query, and integrate
   through REST, Python, BigQuery, web component, and MCP interfaces.
-type: Topic
-xType: topic
+kind: topic
 position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -131,7 +130,7 @@ common:
     description: Self-service portal for requesting Data Commons API keys.
   - url: https://github.com/datacommonsorg
     name: GitHub Organization
-    type: GitHub Organization
+    type: GitHubOrganization
     description: Data Commons open source organization on GitHub.
   - url: https://blog.datacommons.org/
     name: Blog
@@ -143,7 +142,7 @@ common:
     description: Vocabulary of Data Commons knowledge graph concepts.
   - url: json-ld/data-commons-context.jsonld
     name: JSON-LD Context
-    type: JSON-LD
+    type: JSONLD
     description: JSON-LD context mapping Data Commons concepts to Schema.org.
 maintainers:
   - FN: Kin Lane
