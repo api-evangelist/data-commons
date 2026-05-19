@@ -16,7 +16,7 @@ tags:
   - Public Data
   - Statistics
 created: '2026-01-02'
-modified: '2026-04-30'
+modified: '2026-05-19'
 url: >-
   https://raw.githubusercontent.com/api-evangelist/data-commons/refs/heads/main/apis.yml
 specificationVersion: '0.19'
@@ -144,6 +144,9 @@ common:
     name: JSON-LD Context
     type: JSONLD
     description: JSON-LD context mapping Data Commons concepts to Schema.org.
+  - name: MCP Server
+    url: https://blog.datacommons.org/2025/10/02/announcing-the-data-commons-model-context-protocol-server/
+    type: MCPServer
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
