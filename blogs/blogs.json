@@ -2,12 +2,20 @@
   "repo": "data-commons",
   "feeds": [
     {
+      "source": "https://blog.datacommons.org/feed/",
+      "feed_url": "https://blog.datacommons.org/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://blog.datacommons.org/",
       "feed_url": "https://blog.datacommons.org/feed/",
-      "title": "Data Commons \u2022 Blog",
-      "saved": 12
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
   "post_count": 22,
-  "fetched": "2026-05-17T20:20:35Z"
+  "fetched": "2026-06-01T23:35:02Z"
 }
