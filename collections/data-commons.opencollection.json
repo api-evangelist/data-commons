@@ -1,0 +1,186 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Data Commons REST API V2",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-Key",
+      "value": "{{X-API-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Observation",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch statistical observations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.datacommons.org/v2/observation",
+            "params": [
+              {
+                "name": "key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "date",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "select",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "entity.dcids",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "entity.expression",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "variable.dcids",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Fetch statistical observations"
+        },
+        {
+          "info": {
+            "name": "Fetch statistical observations",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datacommons.org/v2/observation",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Fetch statistical observations"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Node",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Query node properties and arcs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.datacommons.org/v2/node",
+            "params": [
+              {
+                "name": "key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nodes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "property",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Query node properties and arcs"
+        },
+        {
+          "info": {
+            "name": "Query node properties and arcs",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datacommons.org/v2/node",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Query node properties and arcs"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Resolve",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Resolve entities to Data Commons IDs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.datacommons.org/v2/resolve",
+            "params": [
+              {
+                "name": "key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nodes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "property",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Resolve entities to Data Commons IDs"
+        },
+        {
+          "info": {
+            "name": "Resolve entities to Data Commons IDs",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datacommons.org/v2/resolve",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Resolve entities to Data Commons IDs"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
