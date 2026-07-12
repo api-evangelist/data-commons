@@ -1,0 +1,22 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/data-commons-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  - query
+schemes:
+- name: apiKeyHeader
+  type: apiKey
+  in: header
+  parameter: X-API-Key
+  sources:
+  - openapi/data-commons-openapi.yml
+- name: apiKeyQuery
+  type: apiKey
+  in: query
+  parameter: key
+  sources:
+  - openapi/data-commons-openapi.yml
