@@ -107,6 +107,8 @@ apis:
       - type: API Keys
         url: https://apikeys.datacommons.org
 common:
+  - type: AgenticAccess
+    url: agentic-access/data-commons-agentic-access.yml
   - type: DomainSecurity
     url: security/data-commons-domain-security.yml
   - type: Authentication
