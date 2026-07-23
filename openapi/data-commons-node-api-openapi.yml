@@ -1,0 +1,72 @@
+openapi: 3.1.0
+info:
+  title: Data Commons REST API V2 Node API
+  version: '2.0'
+  description: Minimal OpenAPI description of the Data Commons V2 REST API for fetching statistical observations, querying graph nodes, and resolving entities. Generated from public Data Commons documentation.
+  x-generated-from: https://docs.datacommons.org/api/rest/v2/
+  x-generated-by: claude-crawl-2026-05-08
+servers:
+- url: https://api.datacommons.org/v2
+  description: Data Commons production
+security:
+- apiKeyHeader: []
+- apiKeyQuery: []
+tags:
+- name: Node
+paths:
+  /node:
+    get:
+      tags:
+      - Node
+      summary: Query node properties and arcs
+      parameters:
+      - $ref: '#/components/parameters/KeyQuery'
+      - name: nodes
+        in: query
+        schema:
+          type: array
+          items:
+            type: string
+      - name: property
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      tags:
+      - Node
+      summary: Query node properties and arcs
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  parameters:
+    KeyQuery:
+      name: key
+      in: query
+      schema:
+        type: string
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      in: header
+      name: X-API-Key
+    apiKeyQuery:
+      type: apiKey
+      in: query
+      name: key
