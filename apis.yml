@@ -5,9 +5,22 @@ description: >-
   data into a single graph, making global statistical data simple to explore, query, and integrate through REST, Python,
   BigQuery, web component, and MCP interfaces.
 kind: topic
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/data-commons.png
 tags:
   - Data Commons
   - Knowledge Graph
@@ -19,93 +32,118 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/data-commons/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
-  - aid: data-commons:rest-v2
-    name: Data Commons REST API V2
-    description: >-
-      HTTP REST interface for retrieving statistical observations, exploring the Data Commons knowledge graph, and
-      resolving entities to Data Commons IDs (DCIDs). Returns structured JSON data covering variables, places, and
-      observations.
-    humanURL: https://docs.datacommons.org/api/rest/v2/
-    tags:
-      - Knowledge Graph
-      - REST
-      - Statistics
-    properties:
-      - type: Documentation
-        url: https://docs.datacommons.org/api/rest/v2/
-      - type: API Keys
-        url: https://apikeys.datacommons.org
-      - type: Reference
-        url: https://docs.datacommons.org/api/
-      - type: OpenAPI
-        url: openapi/data-commons-openapi.yml
-  - aid: data-commons:python
-    name: Data Commons Python Client
-    description: >-
-      Official Python client library that wraps the Data Commons REST API with native Pandas DataFrame support for
-      analytical workflows and notebook integration.
-    humanURL: https://docs.datacommons.org/api/python/v2/
-    tags:
-      - Pandas
-      - Python
-      - SDK
-    properties:
-      - type: Documentation
-        url: https://docs.datacommons.org/api/python/v2/
-      - type: PyPI
-        url: https://pypi.org/project/datacommons-client/
-  - aid: data-commons:sheets
-    name: Data Commons Google Sheets
-    description: >-
-      Custom Google Sheets functions that pull Data Commons statistical data directly into spreadsheets without
-      requiring an API key.
-    humanURL: https://docs.datacommons.org/api/sheets/
-    tags:
-      - Google Sheets
-      - Spreadsheets
-    properties:
-      - type: Documentation
-        url: https://docs.datacommons.org/api/sheets/
-  - aid: data-commons:web-components
-    name: Data Commons Web Components
-    description: >-
-      Drop-in JavaScript/HTML web components for embedding Data Commons charts, maps, rankings, and visualizations in
-      any website.
-    humanURL: https://docs.datacommons.org/api/web_components/
-    tags:
-      - JavaScript
-      - Visualization
-      - Web Components
-    properties:
-      - type: Documentation
-        url: https://docs.datacommons.org/api/web_components/
-  - aid: data-commons:bigquery
-    name: Data Commons BigQuery
-    description: >-
-      SQL access to Data Commons through Google BigQuery enabling complex analytical queries and joins with private
-      datasets.
-    humanURL: https://docs.datacommons.org/api/bigquery.html
-    tags:
-      - BigQuery
-      - SQL
-    properties:
-      - type: Documentation
-        url: https://docs.datacommons.org/api/bigquery.html
-  - aid: data-commons:mcp
-    name: Data Commons MCP Server
-    description: >-
-      Model Context Protocol server that lets AI agents query Data Commons conversationally, surfacing variables,
-      places, and observations through natural language tools.
-    humanURL: https://docs.datacommons.org/api/mcp/
-    tags:
-      - AI Agents
-      - MCP
-      - Natural Language
-    properties:
-      - type: Documentation
-        url: https://docs.datacommons.org/api/mcp/
-      - type: API Keys
-        url: https://apikeys.datacommons.org
+- aid: data-commons:python
+  name: Data Commons Python Client
+  description: >-
+    Official Python client library that wraps the Data Commons REST API with native Pandas DataFrame support
+    for analytical workflows and notebook integration.
+  humanURL: https://docs.datacommons.org/api/python/v2/
+  tags:
+  - Pandas
+  - Python
+  - SDK
+  properties:
+  - type: Documentation
+    url: https://docs.datacommons.org/api/python/v2/
+  - type: PyPI
+    url: https://pypi.org/project/datacommons-client/
+- aid: data-commons:sheets
+  name: Data Commons Google Sheets
+  description: >-
+    Custom Google Sheets functions that pull Data Commons statistical data directly into spreadsheets
+    without requiring an API key.
+  humanURL: https://docs.datacommons.org/api/sheets/
+  tags:
+  - Google Sheets
+  - Spreadsheets
+  properties:
+  - type: Documentation
+    url: https://docs.datacommons.org/api/sheets/
+- aid: data-commons:web-components
+  name: Data Commons Web Components
+  description: >-
+    Drop-in JavaScript/HTML web components for embedding Data Commons charts, maps, rankings, and visualizations
+    in any website.
+  humanURL: https://docs.datacommons.org/api/web_components/
+  tags:
+  - JavaScript
+  - Visualization
+  - Web Components
+  properties:
+  - type: Documentation
+    url: https://docs.datacommons.org/api/web_components/
+- aid: data-commons:bigquery
+  name: Data Commons BigQuery
+  description: >-
+    SQL access to Data Commons through Google BigQuery enabling complex analytical queries and joins with
+    private datasets.
+  humanURL: https://docs.datacommons.org/api/bigquery.html
+  tags:
+  - BigQuery
+  - SQL
+  properties:
+  - type: Documentation
+    url: https://docs.datacommons.org/api/bigquery.html
+- aid: data-commons:mcp
+  name: Data Commons MCP Server
+  description: >-
+    Model Context Protocol server that lets AI agents query Data Commons conversationally, surfacing variables,
+    places, and observations through natural language tools.
+  humanURL: https://docs.datacommons.org/api/mcp/
+  tags:
+  - AI Agents
+  - MCP
+  - Natural Language
+  properties:
+  - type: Documentation
+    url: https://docs.datacommons.org/api/mcp/
+  - type: API Keys
+    url: https://apikeys.datacommons.org
+- aid: data-commons:data-commons-node-api
+  name: Data Commons Node API
+  description: The Node API from Data Commons — 1 operation(s) for node.
+  humanURL: https://docs.datacommons.org/api/rest/v2/
+  tags:
+  - Node
+  properties:
+  - type: OpenAPI
+    url: openapi/data-commons-node-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datacommons.org/api/rest/v2/
+  - type: API Keys
+    url: https://apikeys.datacommons.org
+  - type: Reference
+    url: https://docs.datacommons.org/api/
+- aid: data-commons:data-commons-observation-api
+  name: Data Commons Observation API
+  description: The Observation API from Data Commons — 1 operation(s) for observation.
+  humanURL: https://docs.datacommons.org/api/rest/v2/
+  tags:
+  - Observation
+  properties:
+  - type: OpenAPI
+    url: openapi/data-commons-observation-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datacommons.org/api/rest/v2/
+  - type: API Keys
+    url: https://apikeys.datacommons.org
+  - type: Reference
+    url: https://docs.datacommons.org/api/
+- aid: data-commons:data-commons-resolve-api
+  name: Data Commons Resolve API
+  description: The Resolve API from Data Commons — 1 operation(s) for resolve.
+  humanURL: https://docs.datacommons.org/api/rest/v2/
+  tags:
+  - Resolve
+  properties:
+  - type: OpenAPI
+    url: openapi/data-commons-resolve-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datacommons.org/api/rest/v2/
+  - type: API Keys
+    url: https://apikeys.datacommons.org
+  - type: Reference
+    url: https://docs.datacommons.org/api/
 common:
   - type: AgenticAccess
     url: agentic-access/data-commons-agentic-access.yml
