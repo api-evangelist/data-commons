@@ -1,0 +1,18 @@
+{
+  "provider": "data-commons",
+  "sources": [
+    "data-commons-node-api-openapi.yml",
+    "data-commons-observation-api-openapi.yml",
+    "data-commons-resolve-api-openapi.yml"
+  ],
+  "outputs": [
+    "data-commons-node-api-openapi.yml",
+    "data-commons-observation-api-openapi.yml",
+    "data-commons-resolve-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
