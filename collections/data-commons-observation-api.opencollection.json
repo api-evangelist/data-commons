@@ -1,0 +1,84 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Data Commons REST API V2 Node Observation API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-Key",
+      "value": "{{X-API-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Observation",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch statistical observations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.datacommons.org/v2/observation",
+            "params": [
+              {
+                "name": "key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "date",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "select",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "entity.dcids",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "entity.expression",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "variable.dcids",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Fetch statistical observations"
+        },
+        {
+          "info": {
+            "name": "Fetch statistical observations",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datacommons.org/v2/observation",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Fetch statistical observations"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,69 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Data Commons REST API V2 Node API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-Key",
+      "value": "{{X-API-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Node",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Query node properties and arcs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.datacommons.org/v2/node",
+            "params": [
+              {
+                "name": "key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nodes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "property",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Query node properties and arcs"
+        },
+        {
+          "info": {
+            "name": "Query node properties and arcs",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datacommons.org/v2/node",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Query node properties and arcs"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

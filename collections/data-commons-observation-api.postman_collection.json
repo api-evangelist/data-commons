@@ -1,0 +1,303 @@
+{
+  "item": [
+    {
+      "id": "bbe5c92a-d64a-4bff-a0cb-130c1c7a0667",
+      "name": "Observation",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "ed013b7a-b080-43df-b96e-f8db2e4fe50c",
+          "name": "Fetch statistical observations",
+          "request": {
+            "name": "Fetch statistical observations",
+            "description": {},
+            "url": {
+              "path": [
+                "observation"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "date",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "select",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "select",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "entity.dcids",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "entity.dcids",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "entity.expression",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "variable.dcids",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "variable.dcids",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4175d1bc-3ac3-4bd8-834c-bcc0f5aedc83",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "observation"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "select",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "select",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "entity.dcids",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "entity.dcids",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "entity.expression",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "variable.dcids",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "variable.dcids",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-Key",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a2070325-c613-47de-b52e-24572ae8b315",
+          "name": "Fetch statistical observations",
+          "request": {
+            "name": "Fetch statistical observations",
+            "description": {},
+            "url": {
+              "path": [
+                "observation"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<object>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "9896c10d-7f99-49dd-86ae-ecdc95cc9619",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "observation"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-Key",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<object>",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.datacommons.org/v2",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "1eab2641-b1ac-4bc5-a0af-6d31551a575a",
+    "name": "Data Commons REST API V2 Node Observation API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Minimal OpenAPI description of the Data Commons V2 REST API for fetching statistical observations, querying graph nodes, and resolving entities. Generated from public Data Commons documentation.",
+      "type": "text/plain"
+    }
+  }
+}
