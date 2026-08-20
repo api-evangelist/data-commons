@@ -93,6 +93,10 @@ apis:
   tags:
   - AI Agents
   - MCP
+  - Natural-Language
+  tags_raw:
+  - AI Agents
+  - MCP
   - Natural Language
   properties:
   - type: Documentation
