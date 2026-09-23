@@ -1,9 +1,7 @@
 {
   "provider": "data-commons",
   "sources": [
-    "data-commons-node-api-openapi.yml",
-    "data-commons-observation-api-openapi.yml",
-    "data-commons-resolve-api-openapi.yml"
+    "_ae-authored/data-commons-openapi.yml"
   ],
   "outputs": [
     "data-commons-node-api-openapi.yml",
@@ -13,6 +11,14 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "data-commons-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "data-commons-node-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "data-commons-observation-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "data-commons-resolve-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
