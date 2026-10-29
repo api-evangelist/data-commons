@@ -1,4 +1,4 @@
-# Data Commons (data-commons)
+# data-commons
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,154 +64,32 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Data Commons is an open knowledge graph initiative led by Google that aggregates and harmonizes the world's public data into a single graph, making global statistical data simple to explore, query, and integrate through REST, Python, BigQuery, web component, and MCP interfaces.
+## data-commons on APIs.io
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/data-commons/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/data-commons/refs/heads/main/apis.yml)
+Everything profiled for data-commons is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/data-commons/](https://apis.io/providers/data-commons/)** — or go straight to one of the APIs or properties below.
 
-## Scope
+### Published properties
 
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### MCP servers (1)
 
-- Data Commons
-- Knowledge Graph
-- Open Data
-- Public Data
-- Statistics
+Model Context Protocol servers that expose the API to agents.
 
-## Timestamps
+- [MCP Server](https://apis.io/servers/data-commons/mcp-server/)
 
-- **Created:** 2026-01-02
-- **Modified:** 2026-05-19
+## API Evangelist rating
 
-## APIs
+Not yet rated. See [apis.io/providers/data-commons/](https://apis.io/providers/data-commons/).
 
-### Data Commons REST API V2
+## How this profile is made
 
-HTTP REST interface for retrieving statistical observations, exploring the Data Commons knowledge graph, and resolving entities to Data Commons IDs (DCIDs). Returns structured JSON data covering variables, places, and observations.
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- **Human URL:** [https://docs.datacommons.org/api/rest/v2/](https://docs.datacommons.org/api/rest/v2/)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for data-commons: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-#### Tags
+## Open an issue
 
-- Knowledge Graph
-- REST
-- Statistics
-
-#### Properties
-
-- [Documentation](https://docs.datacommons.org/api/rest/v2/)
-- [A P I  Keys](https://apikeys.datacommons.org)
-- [Reference](https://docs.datacommons.org/api/)
-- [OpenAPI](openapi/data-commons-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/data-commons.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/data-commons.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Data Commons Python Client
-
-Official Python client library that wraps the Data Commons REST API with native Pandas DataFrame support for analytical workflows and notebook integration.
-
-- **Human URL:** [https://docs.datacommons.org/api/python/v2/](https://docs.datacommons.org/api/python/v2/)
-
-#### Tags
-
-- Pandas
-- Python
-- SDK
-
-#### Properties
-
-- [Documentation](https://docs.datacommons.org/api/python/v2/)
-- [Py P I](https://pypi.org/project/datacommons-client/)
-- [Postman Collection](collections/data-commons.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/data-commons.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Data Commons Google Sheets
-
-Custom Google Sheets functions that pull Data Commons statistical data directly into spreadsheets without requiring an API key.
-
-- **Human URL:** [https://docs.datacommons.org/api/sheets/](https://docs.datacommons.org/api/sheets/)
-
-#### Tags
-
-- Google Sheets
-- Spreadsheets
-
-#### Properties
-
-- [Documentation](https://docs.datacommons.org/api/sheets/)
-- [Postman Collection](collections/data-commons.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/data-commons.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Data Commons Web Components
-
-Drop-in JavaScript/HTML web components for embedding Data Commons charts, maps, rankings, and visualizations in any website.
-
-- **Human URL:** [https://docs.datacommons.org/api/web_components/](https://docs.datacommons.org/api/web_components/)
-
-#### Tags
-
-- JavaScript
-- Visualization
-- Web Components
-
-#### Properties
-
-- [Documentation](https://docs.datacommons.org/api/web_components/)
-- [Postman Collection](collections/data-commons.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/data-commons.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Data Commons BigQuery
-
-SQL access to Data Commons through Google BigQuery enabling complex analytical queries and joins with private datasets.
-
-- **Human URL:** [https://docs.datacommons.org/api/bigquery.html](https://docs.datacommons.org/api/bigquery.html)
-
-#### Tags
-
-- BigQuery
-- SQL
-
-#### Properties
-
-- [Documentation](https://docs.datacommons.org/api/bigquery.html)
-- [Postman Collection](collections/data-commons.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/data-commons.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Data Commons MCP Server
-
-Model Context Protocol server that lets AI agents query Data Commons conversationally, surfacing variables, places, and observations through natural language tools.
-
-- **Human URL:** [https://docs.datacommons.org/api/mcp/](https://docs.datacommons.org/api/mcp/)
-
-#### Tags
-
-- AI Agents
-- MCP
-- Natural Language
-
-#### Properties
-
-- [Documentation](https://docs.datacommons.org/api/mcp/)
-- [A P I  Keys](https://apikeys.datacommons.org)
-- [Postman Collection](collections/data-commons.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/data-commons.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Website](https://datacommons.org/)
-- [Documentation](https://docs.datacommons.org/)
-- [A P I  Documentation](https://docs.datacommons.org/api/)
-- [A P I  Keys](https://apikeys.datacommons.org)
-- [GitHub Organization](https://github.com/datacommonsorg)
-- [Blog](https://blog.datacommons.org/)
-- [Vocabulary](vocabulary/data-commons-vocabulary.yml)
-- [JSON-LD](json-ld/data-commons-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [M C P Server](https://blog.datacommons.org/2025/10/02/announcing-the-data-commons-model-context-protocol-server/)
-
-## Maintainers
-
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/data-commons/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
